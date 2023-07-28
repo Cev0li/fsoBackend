@@ -99,7 +99,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "build:ui": "@powershell Remove-Item -Recurse -Force build && cd ../fso && npm run build && @powershell Copy-Item build -Recurse ../fsoBackend",
-    "build:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "build:full": " git add . && git commit -m uibuild && git push -f origin main"
   },
   "repository": {
     "type": "git",
